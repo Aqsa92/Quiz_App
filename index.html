@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showQuestion(0)">
+    <div >
+        <div id="h">
+    <h1 class="heading">General Knowledge Quiz</h1>
+    </div >
+    <div class="questions">
+        <h1>Question <b id="head1"> 1 </b></h1>
+        <h3 id="q1">Questions</h3>
+        <ul id="unOrderedList">
+            <li class="list" id="li1" onmouseover="hover(this)" onmouseout="out(this)" onclick="check(this)">opt 1</li>
+            <li class="list" id="li2" onmouseover="hover(this)" onmouseout="out(this)" onclick="check(this)">opt 2</li>
+            <li class="list" id="li3" onmouseover="hover(this)" onmouseout="out(this)" onclick="check(this)">opt 3</li>
+            <li class="list" id="li4" onmouseover="hover(this)" onmouseout="out(this)" onclick="check(this)">opt 4</li>
+        </ul>
+    </div>
+    <div class="btn">
+        <button  class="nextBtn" onclick="next()" id="next">Next</button>
+    </div>
+
+    <div id="result"><button onclick="rslt()" id="rslt">See Your Result</button></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
